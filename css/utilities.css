@@ -1,19 +1,14 @@
-/* Text colors */
-.text-primary {
-    color: #28a745;
+.text-primary{
+    color: green;
 }
-
-.text-secondary {
-    color: #0284d0;
+.text-secondry{
+    color: blue;
 }
-
-/* Button */
-.btn {
+.btn{
     cursor: pointer;
     display: inline-block;
     padding: 10px 30px;
     color: #fff;
-    background-color: #28a745;
     border: none;
     border-radius: 5px;
 }
@@ -23,41 +18,25 @@
 }
 
 .btn-primary, .bg-primary {
-   background: #28a745;
-   color: #fff;
-}
-.btn-secondary, .bg-secondary {
-   background: #0284d0;
-   color: #fff;
-}
-.btn-dark, .bg-dark {
-   background: #333;
-   color: #fff;
-}
-.btn-light, .bg-light {
-   background: #f4f4f4;
-   color: #333;
-}
-
-.btn-outline {
-    background: transparent;
-    border: 1px solid #fff;
-}
-
-/* Flex items */
-.flex-items {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-}
-
-.flex-items > div {
+    background: green;
+    color: #fff;
+ }
+ .btn-secondary, .bg-secondary {
+    background: blue;
+    color: #fff;
+ }
+ .btn-dark, .bg-dark {
+    background: rgb(67, 64, 64);
+    color: #fff;
+ }
+ .btn-light, .bg-light {
+    background: #f4f4f4;
+    color: #333;
+ }
+ .flex-items > div {
     padding: 20px;
 }
 
-/* Flex columns */
 .flex-columns.flex-reverse .row {
     flex-direction: row-reverse;
 }
@@ -76,8 +55,8 @@
     flex: 1;
 }
 
-.flex-columns .column .column-1,
-.flex-columns .column .column-2 {
+.flex-columns .column .column1,
+.flex-columns .column .column2 {
     height: 100%;
 }
 
@@ -87,14 +66,13 @@
     object-fit: cover;
 }
 
-.flex-columns .column-2 {
+.flex-columns .column2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     padding: 30px;
 }
-
 .flex-columns h2 {
     font-size: 40px;
     font-weight: 100;
@@ -107,8 +85,6 @@
 .flex-columns p {
     margin: 20px 0;
 }
-
-/* Section header */
 .section-header {
     padding: 30px;
     display: flex;
@@ -126,8 +102,6 @@
 .section-padding {
     padding: 20px 20px 40px;
 }
-
-/* Flex grid */
 .flex-grid .row {
     display: flex;
     flex-wrap: wrap;
@@ -139,4 +113,30 @@
     max-width: 25%;
     padding: 0 4px;
 }
+@media(max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+    }
 
+    .navbar a {
+        padding: 10px 10px;
+        margin: 0 3px;
+    }
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .flex-columns .column, .flex-grid .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .team img {
+        width: 70%;
+    }
+
+
+}
